@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+</head>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+>
+<body>
+  <section>
+    <div class="container">
+        <div class="column">
+            <div class="column is-half
+is-offset-one-quarter">
+
+                <img width="100%" src="pic.jpeg">
+                <div class="card">
+                    <header class="card-header">
+                      <p class="card-header-title">Score Keeper</p>
+                    </header>
+                    <div class="card-content">
+                      <div class="content">
+                        <h1 class="is-size-1"><span id="p1Score">0 </span> to <span id="p2Score"> 0 </span></h1>
+                        <label for="playto" class="label is-large is-inline">Playing to</label>
+           
+                        <div class="select is-rounded">
+                            <select name="" id="playto">
+                                <option value="None">None</option>                      
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p class="subtitle">Use the buttons below to keep Score: </p>
+
+                    <footer class="card-footer">
+                      <button id="p1Button" class="is-primary button card-footer-item ">+1 Player 1</button>
+                      <button id="p2Button" class="is-info button card-footer-item ">+1 Player 2</button>
+                      <button id="resetButton" class="is-danger button card-footer-item ">reset</button>
+                    </footer>
+                  </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </section>
+</body>
+</html>
